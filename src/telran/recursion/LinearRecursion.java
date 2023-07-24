@@ -107,7 +107,7 @@ public static int square(int x) {
 	    if (x < 0) {
 	        x = -x;
 	    }
-	    return square(x - 1) + 2 * x - 1;
+	    return square(x - 1) + x + x - 1;
 	}
 public static boolean isSubstring(String string, String substr) { 
 
