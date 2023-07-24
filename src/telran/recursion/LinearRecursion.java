@@ -100,8 +100,15 @@ public static int square(int x) {
 	//No static fields
 	// Only + ; - arithmetic operations
 	
-	   return (int) ((x == 0) ? 0 : multiply(x, x));
-}
+	   //return (int) ((x == 0) ? 0 : multiply(x, x)); //Var0;
+	  if (x == 0) {
+	        return 0;
+	    }
+	    if (x < 0) {
+	        x = -x;
+	    }
+	    return square(x - 1) + 2 * x - 1;
+	}
 public static boolean isSubstring(String string, String substr) { 
 
 	//TODO
